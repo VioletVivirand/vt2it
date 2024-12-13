@@ -334,8 +334,8 @@ class RealESRGAN:
         Args:
             device (str): 'cpu' for CPU or 'cuda' for Nvidia GPU... etc.
         """
-        self.model.to(device)
         self.device = torch.device(device)
+        self.model.to(self.device)
 
     @torch.cuda.amp.autocast()
     def __call__(self, lr_image, batch_size=4, patches_size=192,
