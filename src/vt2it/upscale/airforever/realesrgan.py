@@ -191,7 +191,7 @@ class RealESRGAN:
             model_path (str): Path to the pretrained model.
                               Automatically download model from huggingface if model_path it not provided.
         """
-        self.device = 'cpu'
+        self.device = torch.device('cpu')
         self.scale = scale
         self.model = RRDBNet(
             num_in_ch=3, num_out_ch=3, num_feat=64,
@@ -335,7 +335,7 @@ class RealESRGAN:
             device (str): 'cpu' for CPU or 'cuda' for Nvidia GPU... etc.
         """
         self.model.to(device)
-        self.device = device
+        self.device = torch.device(device)
 
     @torch.cuda.amp.autocast()
     def __call__(self, lr_image, batch_size=4, patches_size=192,
