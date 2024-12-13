@@ -9,13 +9,15 @@ But if something placed here violates your copyrights, **PLEASE CONTACT ME ASAP*
 Thank you so much! Have a nice day!
 
 - [Usage](#usage)
-  - [RealESRGAN](#realesrgan)
+  - [Real-ESRGAN](#real-esrgan)
     - [Rewrite from ai-forever/Real-ESRGAN](#rewrite-from-ai-foreverreal-esrgan)
 
 
 # Usage
 
-## RealESRGAN
+## Real-ESRGAN
+
+Real-ESRGAN is an algorithm aims to generate image restoration. In GenAI projects, it generally adapted to upscale the images.
 
 ### Rewrite from [ai-forever/Real-ESRGAN](https://github.com/ai-forever/Real-ESRGAN)
 
