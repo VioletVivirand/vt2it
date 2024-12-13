@@ -1,10 +1,23 @@
+# vt2it: Vivi's GenAI Text-to-image (t2i) Toolbox <!-- omit in toc -->
+
+For every developer who unintentionally visits here: Welcome my friend! This is my repo for storing things that will be use in GenAI Text-to-image projects for my own convenience.
+
+Take anything you want without hesitation! But I am sorry and afraid that I won't receive any feature request. Just because this is my little playground, so I am not responsive for everything but my own needs.
+
+But if something placed here violates your copyrights, **PLEASE CONTACT ME ASAP**.
+
+Thank you so much! Have a nice day!
+
 - [Usage](#usage)
-  - [RealESRGAN (Re-write from ai-forever/Real-ESRGAN)](#realesrgan-re-write-from-ai-foreverreal-esrgan)
+  - [RealESRGAN](#realesrgan)
+    - [Rewrite from ai-forever/Real-ESRGAN](#rewrite-from-ai-foreverreal-esrgan)
 
 
 # Usage
 
-## RealESRGAN (Re-write from [ai-forever/Real-ESRGAN](https://github.com/ai-forever/Real-ESRGAN))
+## RealESRGAN
+
+### Rewrite from [ai-forever/Real-ESRGAN](https://github.com/ai-forever/Real-ESRGAN)
 
 Download sample image:
 
@@ -12,7 +25,7 @@ Download sample image:
 curl https://raw.githubusercontent.com/ai-forever/Real-ESRGAN/refs/heads/main/inputs/lr_image.png -o lr_image.png
 ```
 
-Initialize Real-ESRGAN:
+To use Real-ESRGAN:
 
 ```python
 from PIL import Image
