@@ -191,6 +191,7 @@ class RealESRGAN:
             model_path (str): Path to the pretrained model.
                               Automatically download model from huggingface if model_path it not provided.
         """
+        self.device = 'cpu'
         self.scale = scale
         self.model = RRDBNet(
             num_in_ch=3, num_out_ch=3, num_feat=64,
